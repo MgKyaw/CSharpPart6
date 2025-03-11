@@ -1,34 +1,55 @@
-﻿/* 
-This code uses a names array and corresponding methods to display
-greeting messages
-*/
+﻿// /* 
+// This code uses a names array and corresponding methods to display
+// greeting messages
+// */
 
-string[] names = new string[] { "Sophia", "Andrew", "AllGreetings" };
+// string[] names = new string[] { "Sophia", "Andrew", "AllGreetings" };
 
-string messageText = "";
+// string messageText = "";
 
-foreach (string name in names)
+// foreach (string name in names)
+// {
+//     if (name == "Sophia")
+//         messageText = SophiaMessage();
+//     else if (name == "Andrew")
+//         messageText = AndrewMessage();
+//     else if (name == "AllGreetings")
+//         messageText = SophiaMessage();
+//         messageText = messageText + "\n\r" + AndrewMessage();
+
+//     Console.WriteLine(messageText + "\n\r");
+// }
+
+// bool pauseCode = true;
+// while (pauseCode == true);
+
+// static string SophiaMessage()
+// {
+//     return "Hello, my name is Sophia.";
+// }
+
+// static string AndrewMessage()
+// {
+//     return "Hi, my name is Andrew. Good to meet you.";
+// }
+
+// Unit 7
+
+int productCount = 2000;
+string[,] products = new string[productCount, 2];
+
+LoadProducts(products, productCount);
+
+for (int i = 0; i < productCount; i++)
 {
-    if (name == "Sophia")
-        messageText = SophiaMessage();
-    else if (name == "Andrew")
-        messageText = AndrewMessage();
-    else if (name == "AllGreetings")
-        messageText = SophiaMessage();
-        messageText = messageText + "\n\r" + AndrewMessage();
+    string result;
+    result = Process1(products, i);
 
-    Console.WriteLine(messageText + "\n\r");
+    if (result != "obsolete")
+    {
+        result = Process2(products, i);
+    }
 }
 
 bool pauseCode = true;
-while (pauseCode == true);
-
-static string SophiaMessage()
-{
-    return "Hello, my name is Sophia.";
-}
-
-static string AndrewMessage()
-{
-    return "Hi, my name is Andrew. Good to meet you.";
-}
+while (pauseCode == true) ;
