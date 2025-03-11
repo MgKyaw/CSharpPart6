@@ -1,0 +1,14 @@
+D:\project\C#\Projects\CSharpPart6\Debug101\bin\Debug\net9.0\Debug101.exe
+D:\project\C#\Projects\CSharpPart6\Debug101\bin\Debug\net9.0\Debug101.deps.json
+D:\project\C#\Projects\CSharpPart6\Debug101\bin\Debug\net9.0\Debug101.runtimeconfig.json
+D:\project\C#\Projects\CSharpPart6\Debug101\bin\Debug\net9.0\Debug101.dll
+D:\project\C#\Projects\CSharpPart6\Debug101\bin\Debug\net9.0\Debug101.pdb
+D:\project\C#\Projects\CSharpPart6\Debug101\obj\Debug\net9.0\Debug101.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\C#\Projects\CSharpPart6\Debug101\obj\Debug\net9.0\Debug101.AssemblyInfoInputs.cache
+D:\project\C#\Projects\CSharpPart6\Debug101\obj\Debug\net9.0\Debug101.AssemblyInfo.cs
+D:\project\C#\Projects\CSharpPart6\Debug101\obj\Debug\net9.0\Debug101.csproj.CoreCompileInputs.cache
+D:\project\C#\Projects\CSharpPart6\Debug101\obj\Debug\net9.0\Debug101.dll
+D:\project\C#\Projects\CSharpPart6\Debug101\obj\Debug\net9.0\refint\Debug101.dll
+D:\project\C#\Projects\CSharpPart6\Debug101\obj\Debug\net9.0\Debug101.pdb
+D:\project\C#\Projects\CSharpPart6\Debug101\obj\Debug\net9.0\Debug101.genruntimeconfig.cache
+D:\project\C#\Projects\CSharpPart6\Debug101\obj\Debug\net9.0\ref\Debug101.dll
