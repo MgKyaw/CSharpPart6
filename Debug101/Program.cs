@@ -164,3 +164,20 @@
 //     num2 = num1 + rand.Next(1, 51);
 
 // } while (exit == false);
+
+// Unit 9
+
+/*  
+This code instantiates a value and then calls the ChangeValue method
+to update the value. The code then prints the updated value to the console.
+*/
+int x = 5;
+
+ChangeValue(x);
+
+Console.WriteLine(x);
+
+void ChangeValue(int value) 
+{
+    value = 10;
+}
