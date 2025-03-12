@@ -8,5 +8,9 @@ try
     Console.WriteLine(float1 / float2);
     Console.WriteLine(number1 / number2);
 }
+catch
+{
+    Console.WriteLine("An exception has been caught");
+}
 
 Console.WriteLine("Exit program");
