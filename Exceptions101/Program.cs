@@ -47,7 +47,7 @@ static void WriteMessage()
     byte smallNumber;
 
     Console.WriteLine(float1 / float2);
-    // Console.WriteLine(number1 / number2);
+    Console.WriteLine(number1 / number2);
     checked
     {
         smallNumber = (byte)number1;
