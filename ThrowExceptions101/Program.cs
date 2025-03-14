@@ -96,7 +96,7 @@ static string Workflow1(string[][] userEnteredValues)
 
     foreach (string[] userEntries in userEnteredValues)
     {
-        processStatusMessage = Process1(userEntries);
+        Process1(userEntries);
 
         if (processStatusMessage == "process complete")
         {
@@ -120,10 +120,8 @@ static string Workflow1(string[][] userEnteredValues)
     return operationStatusMessage;
 }
 
-static string Process1(String[] userEntries)
+static void Process1(String[] userEntries)
 {
-    string processStatus = "clean";
-    string returnMessage = "";
     int valueEntered;
 
     foreach (string userValue in userEntries)
@@ -141,21 +139,12 @@ static string Process1(String[] userEntries)
             }
             else
             {
-                returnMessage = "Invalid data. User input values must be non-zero values.";
-                processStatus = "error";
+                throw new DivideByZeroException();
             }
         }
         else
         {
-            returnMessage = "Invalid data. User input values must be valid integers.";
-            processStatus = "error";
+            throw new FormatException();
         }
     }
-
-    if (processStatus == "clean")
-    {
-        returnMessage = "process complete";
-    }
-
-    return returnMessage;
 }
