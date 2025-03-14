@@ -77,7 +77,7 @@ string[][] userEnteredValues = new string[][]
 
 string overallStatusMessage = "";
 
-overallStatusMessage = Workflow1(userEnteredValues);
+Workflow1(userEnteredValues);
 
 if (overallStatusMessage == "operating procedure complete")
 {
@@ -89,35 +89,27 @@ else
     Console.WriteLine(overallStatusMessage);
 }
 
-static string Workflow1(string[][] userEnteredValues)
+static void Workflow1(string[][] userEnteredValues)
 {
     string operationStatusMessage = "good";
     string processStatusMessage = "";
 
     foreach (string[] userEntries in userEnteredValues)
     {
-        Process1(userEntries);
-
-        if (processStatusMessage == "process complete")
+        try
         {
+            Process1(userEntries);
+
             Console.WriteLine("'Process1' completed successfully.");
             Console.WriteLine();
         }
-        else
+        catch(FormatException ex)
         {
             Console.WriteLine("'Process1' encountered an issue, process aborted.");
-            Console.WriteLine(processStatusMessage);
+            Console.WriteLine("Invalid data. User input values must be valid integers.");
             Console.WriteLine();
-            operationStatusMessage = processStatusMessage;
         }
     }
-
-    if (operationStatusMessage == "good")
-    {
-        operationStatusMessage = "operating procedure complete";
-    }
-
-    return operationStatusMessage;
 }
 
 static void Process1(String[] userEntries)
