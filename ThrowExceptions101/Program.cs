@@ -19,7 +19,11 @@ do
     }
     catch (ArgumentOutOfRangeException ex)
     {
-
+        Console.WriteLine("An error has occurred.");
+        Console.WriteLine(ex.Message);
+        Console.WriteLine($"The upper bound must be greater than {lowerBound}");
+        Console.Write($"Enter a new upper bound: ");
+        upperBound = int.Parse(Console.ReadLine());
     }
 }
 
