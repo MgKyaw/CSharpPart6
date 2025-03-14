@@ -7,6 +7,8 @@ int upperBound = int.Parse(Console.ReadLine());
 
 decimal averageValue = 0;
 
+bool exit = false;
+
 do
 {
     try
@@ -26,10 +28,11 @@ do
         string? userResponse = Console.ReadLine();
         if (userResponse.ToLower().Contains("exit"))
         {
-
+            exit = true;
         }
         else
         {
+            exit = false;
             upperBound = int.Parse(userResponse);
         }
     }
