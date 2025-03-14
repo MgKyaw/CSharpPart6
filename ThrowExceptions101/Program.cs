@@ -18,6 +18,8 @@ do
 
         // Display the result to the user
         Console.WriteLine($"The average of even numbers between {lowerBound} and {upperBound} is {averageValue}.");
+        
+        exit = true;
     }
     catch (ArgumentOutOfRangeException ex)
     {
