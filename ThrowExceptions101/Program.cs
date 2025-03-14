@@ -22,8 +22,16 @@ do
         Console.WriteLine("An error has occurred.");
         Console.WriteLine(ex.Message);
         Console.WriteLine($"The upper bound must be greater than {lowerBound}");
-        Console.Write($"Enter a new upper bound: ");
-        upperBound = int.Parse(Console.ReadLine());
+        Console.Write($"Enter a new upper bound (or enter Exit to quit): ");
+        string? userResponse = Console.ReadLine();
+        if (userResponse.ToLower().Contains("exit"))
+        {
+
+        }
+        else
+        {
+            upperBound = int.Parse(userResponse);
+        }
     }
 }
 
