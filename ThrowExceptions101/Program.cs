@@ -77,16 +77,16 @@ string[][] userEnteredValues = new string[][]
 
 string overallStatusMessage = "";
 
-Workflow1(userEnteredValues);
-
-if (overallStatusMessage == "operating procedure complete")
+try
 {
+    Workflow1(userEnteredValues);
+
     Console.WriteLine("'Workflow1' completed successfully.");
 }
-else
+catch(Exception ex)
 {
     Console.WriteLine("An error occurred during 'Workflow1'.");
-    Console.WriteLine(overallStatusMessage);
+    Console.WriteLine("Invalid data. User input values must be non-zero values.");
 }
 
 static void Workflow1(string[][] userEnteredValues)
