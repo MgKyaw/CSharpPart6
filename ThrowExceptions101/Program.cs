@@ -75,8 +75,6 @@ string[][] userEnteredValues = new string[][]
             new string[] { "0", "1", "2"}
 };
 
-string overallStatusMessage = "";
-
 try
 {
     Workflow1(userEnteredValues);
@@ -91,9 +89,6 @@ catch(Exception ex)
 
 static void Workflow1(string[][] userEnteredValues)
 {
-    string operationStatusMessage = "good";
-    string processStatusMessage = "";
-
     foreach (string[] userEntries in userEnteredValues)
     {
         try
