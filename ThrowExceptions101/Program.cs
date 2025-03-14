@@ -7,11 +7,14 @@ int upperBound = int.Parse(Console.ReadLine());
 
 decimal averageValue = 0;
 
-// Calculate the sum of the even numbers between the bounds
-averageValue = AverageOfEvenNumbers(lowerBound, upperBound);
+try
+{
+    // Calculate the sum of the even numbers between the bounds
+    averageValue = AverageOfEvenNumbers(lowerBound, upperBound);
 
-// Display the value returned by AverageOfEvenNumbers in the console
-Console.WriteLine($"The average of even numbers between {lowerBound} and {upperBound} is {averageValue}.");
+    // Display the result to the user
+    Console.WriteLine($"The average of even numbers between {lowerBound} and {upperBound} is {averageValue}.");
+}
 
 // Wait for user input
 Console.ReadLine();
