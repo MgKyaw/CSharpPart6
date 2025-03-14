@@ -24,7 +24,6 @@ static decimal AverageOfEvenNumbers(int lowerBound, int upperBound)
     }
 
     int sum = 0;
-    int sum = 0;
     int count = 0;
     decimal average = 0;
 
