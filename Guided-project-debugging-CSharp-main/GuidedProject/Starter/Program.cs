@@ -82,6 +82,10 @@ while (transactions > 0)
         // MakeChange manages the transaction and updates the till 
         string transactionMessage = MakeChange(itemCost, cashTill, paymentTwenties, paymentTens, paymentFives, paymentOnes);
     }
+    catch
+    {
+    }
+    
     // Backup Calculation - each transaction adds current "itemCost" to the till
     if (transactionMessage == "transaction succeeded")
     {
