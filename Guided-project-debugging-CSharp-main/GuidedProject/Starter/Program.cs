@@ -120,10 +120,8 @@ static void LoadTillEachMorning(int[,] registerDailyStartingCash, int[] cashTill
 }
 
 
-static string MakeChange(int cost, int[] cashTill, int twenties, int tens = 0, int fives = 0, int ones = 0)
+static void MakeChange(int cost, int[] cashTill, int twenties, int tens = 0, int fives = 0, int ones = 0)
 {
-    string transactionMessage = "";
-
     cashTill[3] += twenties;
     cashTill[2] += tens;
     cashTill[1] += fives;
@@ -165,13 +163,8 @@ static string MakeChange(int cost, int[] cashTill, int twenties, int tens = 0, i
         Console.WriteLine("\t A one");
     }
 
-    if (changeNeeded > 0)
-        transactionMessage = "Can't make change. Do you have anything smaller?";
-
-    if (transactionMessage == "")
-        transactionMessage = "transaction succeeded";
-
-    return transactionMessage;
+    // if (changeNeeded > 0)
+    //     transactionMessage = "Can't make change. Do you have anything smaller?";
 }
 
 static void LogTillStatus(int[] cashTill)
