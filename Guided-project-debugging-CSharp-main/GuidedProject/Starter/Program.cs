@@ -56,7 +56,7 @@ if (useTestData)
 while (transactions > 0)
 {
     transactions -= 1;
-    int itemCost = valueGenerator.Next(2, 20);
+    int itemCost = valueGenerator.Next(2, 50);
 
     if (useTestData)
     {
@@ -88,8 +88,7 @@ while (transactions > 0)
     catch (InvalidOperationException e)
     {
         Console.WriteLine($"Could not complete transaction: {e.Message}");
-    }  
-    
+    }
 
     Console.WriteLine(TillAmountSummary(cashTill));
     Console.WriteLine($"Expected till value: {registerCheckTillTotal}\n\r");
