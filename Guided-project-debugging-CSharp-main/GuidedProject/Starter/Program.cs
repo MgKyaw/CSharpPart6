@@ -90,16 +90,6 @@ while (transactions > 0)
         Console.WriteLine($"Could not complete transaction: {e.Message}");
     }  
     
-    // Backup Calculation - each transaction adds current "itemCost" to the till
-    if (transactionMessage == "transaction succeeded")
-    {
-        Console.WriteLine($"Transaction successfully completed.");
-        registerCheckTillTotal += itemCost;
-    }
-    else
-    {
-        Console.WriteLine($"Transaction unsuccessful: {transactionMessage}");
-    }
 
     Console.WriteLine(TillAmountSummary(cashTill));
     Console.WriteLine($"Expected till value: {registerCheckTillTotal}\n\r");
